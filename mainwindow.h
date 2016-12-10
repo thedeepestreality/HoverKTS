@@ -8,10 +8,13 @@
 #include <QTcpSocket>
 #include <QHostAddress>
 #include "controlconfig.h"
+#include "customjoystick.h"
 
 namespace Ui {
 class MainWindow;
 }
+
+
 
 class MainWindow : public QMainWindow
 {

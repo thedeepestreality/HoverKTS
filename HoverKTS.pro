@@ -15,10 +15,12 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     qcustomplot.cpp \
-    controlconfig.cpp
+    controlconfig.cpp \
+    customjoystick.cpp
 
 HEADERS  += mainwindow.h \
     qcustomplot.h \
-    controlconfig.h
+    controlconfig.h \
+    customjoystick.h
 
 FORMS    += mainwindow.ui

@@ -30,6 +30,9 @@ MainWindow::MainWindow(QWidget *parent) :
     customPlot = ui->widget;
     customPlot->addGraph();
     customPlot->setInteractions(QCP::iRangeDrag | QCP::iRangeZoom);
+
+    CustomJoystick* cj = new CustomJoystick(ui->tab);
+    cj->setGeometry(5,5,200,200);
 }
 
 void MainWindow::newData()
@@ -171,3 +174,4 @@ void MainWindow::on_rudderSlider_valueChanged(int value)
     conf[1] = value;
     DS << conf;
 }
+
