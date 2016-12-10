@@ -231,6 +231,19 @@
        <string>Level</string>
       </property>
      </widget>
+     <widget class="QPushButton" name="clearPlotButton">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>530</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Clear</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="streamTab">
      <attribute name="title">
@@ -293,7 +306,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -331,10 +344,13 @@
        </rect>
       </property>
       <property name="minimum">
-       <number>-80</number>
+       <number>-5</number>
       </property>
       <property name="maximum">
-       <number>80</number>
+       <number>55</number>
+      </property>
+      <property name="sliderPosition">
+       <number>25</number>
       </property>
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
@@ -496,10 +512,6 @@
         </rect>
        </property>
       </widget>
-      <zorder>doubleSpinBox_7</zorder>
-      <zorder>doubleSpinBox_8</zorder>
-      <zorder>doubleSpinBox_9</zorder>
-      <zorder>kpLabel_2</zorder>
      </widget>
      <widget class="QGroupBox" name="psiGroupBox">
       <property name="geometry">
@@ -806,7 +818,7 @@
      </widget>
     </widget>
    </widget>
-   <widget class="QPushButton" name="stopButton">
+   <widget class="QPushButton" name="startButton">
     <property name="enabled">
      <bool>false</bool>
     </property>
@@ -819,7 +831,8 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color:green;</string>
+     <string notr="true">background-color:red;
+color: white;</string>
     </property>
     <property name="text">
      <string>START</string>
@@ -835,7 +848,8 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color:green;</string>
+     <string notr="true">background-color:red;
+color:white;</string>
     </property>
     <property name="text">
      <string>Connect</string>
@@ -849,6 +863,9 @@
       <width>71</width>
       <height>22</height>
      </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
     </property>
     <property name="value">
      <number>50</number>
@@ -900,7 +917,7 @@
      <x>0</x>
      <y>0</y>
      <width>950</width>
-     <height>26</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>
